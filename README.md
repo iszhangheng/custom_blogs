@@ -1,6 +1,6 @@
-# custom_blogs
+# project_name
 
-> 
+> A Vue.js project
 
 ## Build Setup
 

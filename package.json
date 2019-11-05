@@ -1,7 +1,7 @@
 {
-  "name": "custom_blogs",
+  "name": "project_name",
   "version": "1.0.0",
-  "description": ">",
+  "description": "A Vue.js project",
   "author": "iszhangheng <iszhangheng@foxmail.com>",
   "private": true,
   "scripts": {
@@ -10,14 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@tinymce/tinymce-vue": "^2.1.0",
-    "element-ui": "^2.11.1",
-    "highlight.js": "^9.15.8",
-    "marked": "^0.7.0",
-    "tinymce": "^5.0.12",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "wangeditor": "^3.1.1"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -64,7 +58,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "main": ".postcssrc.js",
-  "license": "ISC"
+  ]
 }
