@@ -5,14 +5,12 @@
 </template>
 <script>
 export default {
-  name: "appHeader"
+  name: "blogHeader"
 };
 </script>
 <style scoped>
 .html_heard {
   height: 50px;
-  width: 80%;
-  float: right;
   background: red;
 }
 </style>

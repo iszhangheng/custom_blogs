@@ -4,7 +4,7 @@
       ref="md"
       @change="change"
       style="min-height: 600px" />
-    <button @click="submit">提交</button>
+    <el-button @click="submit">提交</el-button>
   </div>
 </template>
 <script>

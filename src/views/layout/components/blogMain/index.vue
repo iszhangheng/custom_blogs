@@ -1,5 +1,5 @@
 <template>
-  <div class="html_main">
+  <div>
     <div class="html_template">
       <router-view></router-view>
     </div>
@@ -8,20 +8,14 @@
 
 <script>
 export default {
-  name: "appMain"
+  name: "blogMain"
 };
 </script>
 <style scoped>
-.html_main {
-  width: 80%;
-  height: 100%;
-  float: right;
-  padding: 0px;
-  margin: 0px;
-}
 .html_template {
   background-color: white;
-  overflow: auto;
-  margin: 20px;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 </style>

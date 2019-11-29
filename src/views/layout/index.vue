@@ -1,21 +1,27 @@
 <template>
   <div class="layout">
-    <app-header></app-header>
-    <app-main></app-main>
-    <sidebar></sidebar>
+    <div class="left">
+      <blog-sidebar></blog-sidebar>
+    </div>
+    <div class="right">
+      <blog-main></blog-main>
+    </div>
+    <blog-footer></blog-footer>
   </div>
 </template>
 
 <script>
-import appHeader from "./components/AppHeader";
-import appMain from "./components/AppMain";
-import sidebar from "./components/sidebar";
+import blogHeader from "./components/blogHeader";
+import blogMain from "./components/blogMain";
+import blogSidebar from "./components/blogSidebar";
+import blogFooter from "./components/blogFooter";
 export default {
   name: "layout",
   components: {
-    appMain,
-    appHeader,
-    sidebar
+    blogHeader,
+    blogMain,
+    blogSidebar,
+    blogFooter
   }
 };
 </script>
@@ -25,5 +31,22 @@ export default {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: auto;
+}
+.left {
+  width: 350px;
+  height: 100%;
+  float: left;
+  margin: 0px;
+}
+.right {
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(240, 242, 245);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.right::-webkit-scrollbar {
+  display: none;
 }
 </style>

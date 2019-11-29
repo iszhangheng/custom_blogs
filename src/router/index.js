@@ -7,19 +7,26 @@ Vue.use(Router)
 
 export default new Router({
   routes: [{
-      path: '/',
-      name: 'TinyMce',
+      path: '',
+      name: 'index',
       component: layout,
+      redirect: 'blogList',
       children: [{
-        path: 'editor',
-        name: 'editor',
-        component: () => import('@/views/markdownEditor/index')
+        path: 'blogList',
+        name: 'blogList',
+        component: () => import('@/views/blogList/index')
       }]
     },
     {
       path: '/editor',
       name: 'TinyMce',
-      component: markdownEditor
+      component: layout,
+      redirect: 'editor',
+      children: [{
+        path: 'editor',
+        name: 'editor',
+        component: () => import('@/views/markdownEditor/index')
+      }]
     }
   ]
 })
